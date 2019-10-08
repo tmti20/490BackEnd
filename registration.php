@@ -29,12 +29,17 @@ mysqli_select_db( $db, $project );
 include (  "function.php"     ) ;
 
 // -------------------------------------Get data from input form--------------------------------------
-$user = $_POST ["username"];
-$pass = $_POST ["password"];
 $fname = $_POST ["fname"];
 $lname = $_POST ["lname"];
 
+$user = $_POST ["username"];
+$pass = $_POST ["password"];
 registration($user, $pass,$fname,$lname);
+
+
+//$error_code = $_POST ["username"];
+////$error_message = $_POST ["password"];
+////error($error_code, $error_message);
 
 //------------------------------------------Good bye --------------------------------------------------
 mysqli_close($db);
