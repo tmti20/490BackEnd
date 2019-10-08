@@ -17,12 +17,6 @@ mysqli_select_db( $db, $project );
 
 include (  "function.php"     ) ;
 
-//$user   = getdata("user");
-//$pass   = getdata("pass");
-//$amount = getdata("amount");
-//$choice = getdata ("choice");
-//$number = getdata("number");
-
 $user = $_POST ["user"];
 $pass = $_POST ["pass"];
 
