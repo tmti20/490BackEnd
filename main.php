@@ -14,19 +14,25 @@ if (mysqli_connect_error()){
     exit();}
 echo "<br>Successfully connected to MySQL.<br>";
 mysqli_select_db( $db, $project );
+//-------------------------------------- Database Connection  Above this line -----------------------
 
+
+//Function File included
 include (  "function.php"     ) ;
 
+// -------------------------------------Get data from input form--------------------------------------
 $user = $_POST ["user"];
 $pass = $_POST ["pass"];
 
-//Authentication the user
+//-------------------------------------Authentication the user --------------------------------------
 if(  ! auth ($user, $pass)){
     exit("<br><br>Please, Enter Correct User & Password");}
 else {
     echo "Welcome to SmartQueue";
 }
 
+
+//------------------------------------------Good bye --------------------------------------------------
 mysqli_close($db);
 exit ( "<br><b>Task completed.</b><br>"  ) ;
 
