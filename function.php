@@ -13,14 +13,15 @@ function auth ($user, $pass){
 }
 
 //registration fuctino
-function registration($user, $pass)
+function registration($user, $pass,$fname, $lname)
 {
     global $db;
 
-    $s1 = "INSERT INTO 490test (user, pass) VALUES ('$user', '$pass');";
+    $s1 = "INSERT INTO 490test (user, pass,fname,lname) VALUES ('$user', '$pass','$fname', '$lname');";
 
     ($t1 = mysqli_query($db, $s1)) or die (mysqli_error($db));
-    echo " registration complete $user";
+    echo " registration complete $fname";
 
 }
 ?>
+

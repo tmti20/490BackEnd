@@ -1,3 +1,11 @@
+<button onclick="goBack()">Go Back</button>
+
+<script>
+    function goBack() {
+        window.history.back();
+    }
+</script>
+
 <?php
 
 error_reporting(E_ERROR | E_WARNING | E_PARSE | E_NOTICE);
@@ -23,8 +31,10 @@ include (  "function.php"     ) ;
 // -------------------------------------Get data from input form--------------------------------------
 $user = $_POST ["username"];
 $pass = $_POST ["password"];
+$fname = $_POST ["fname"];
+$lname = $_POST ["lname"];
 
-registration($user, $pass);
+registration($user, $pass,$fname,$lname);
 
 //------------------------------------------Good bye --------------------------------------------------
 mysqli_close($db);

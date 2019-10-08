@@ -1,3 +1,10 @@
+<button onclick="goBack()">Go Back</button>
+<script>
+    function goBack() {
+        window.history.back();
+    }
+</script>
+
 <?php
 
 error_reporting(E_ERROR | E_WARNING | E_PARSE | E_NOTICE);
@@ -40,3 +47,6 @@ exit ( "<br><b>Task completed.</b><br>"  ) ;
 
 
 ?>
+
+
+
