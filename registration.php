@@ -21,18 +21,10 @@ mysqli_select_db( $db, $project );
 include (  "function.php"     ) ;
 
 // -------------------------------------Get data from input form--------------------------------------
-$user = $_POST ["user"];
-$pass = $_POST ["pass"];
+$user = $_POST ["username"];
+$pass = $_POST ["password"];
 
-
-//-------------------------------------Authentication the user --------------------------------------
-if(  ! auth ($user, $pass)){
-    exit("<br><br>Please, Enter Correct User & Password");}
-else {
-    echo "Welcome to SmartQueue";
-}
-
-
+registration($user, $pass);
 
 //------------------------------------------Good bye --------------------------------------------------
 mysqli_close($db);
