@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<head>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<form action ="A1main.php">
+<fieldset >
+  <legend>NJIT Students Banking System</legend>
+<!-- User Input -->
+Username: <input type = text name = "user"  id = "user" placeholder="Enter Name " required autofocus autocomplete=off><br>	
+<!--Password Input -->
+Password :  <input type = text name = "pass"  id = "pass" placeholder="Enter Password " required autocomplete=off><br>
+<!--&lt;!&ndash; Menu &ndash;&gt;-->
+<!--<br><b>Please Select an Option From the Menu </b><br><br>-->
+<!--<select name= "choice" id = "choice">-->
+<!--  <option value="nothing"> Please Select</option>-->
+<!--  <option value="show"> Show </option>-->
+<!--  <option value="deposit"> Deposit </option>-->
+<!--  <option value="withdraw"> Withdraw </option>-->
+<!--</select>-->
+<!--<br><br>-->
+
+<!--&lt;!&ndash; Use span to hide amount & number field first time &ndash;&gt;-->
+<!--<span id = "amount" class= "dis">-->
+<!--&lt;!&ndash; amount &ndash;&gt;-->
+<!--Enter Amount: <input type= text name="amount" id= "amount" placeholder="Enter Amount "  autocomplete=off> <br><br>-->
+<!--</span>-->
+
+<!--<span id = "number" class= "dis">-->
+<!--&lt;!&ndash; # of transaction &ndash;&gt;-->
+<!--Number of Transactions: <input type= text name="number" id= "number" placeholder=" Enter Number"  autocomplete=off> <br><br>-->
+<!--</span>-->
+<!-- Email Checkbox -->
+Receipt Email <input type="checkbox" name= "mail" value="Y"> <br><br>
+<!-- Submit Button -->
+<input type=submit ><br>		
+</fieldset>
+</form>
+
+<!-- Script -->
+<!--<script>	-->
+<!--  var part1 = document.getElementById("choice")-->
+<!--  part1.addEventListener('change', f )-->
+<!--  										-->
+<!--function f() {										-->
+
+<!--     v1 = part1.value  // gets value form menu-->
+<!--     var part2 = document.getElementById("amount") // access element by amount-->
+<!--     var part3 = document.getElementById("number")-->
+<!--     -->
+<!--     if (v1 == "nothing"){-->
+<!--         part2.style.display = "none"-->
+<!--         part3.style.display = "none"-->
+<!--     }-->
+<!--     if (v1 == "show" ){-->
+<!--         part2.style.display = "none"-->
+<!--         part3.style.display = "block"-->
+<!--     }-->
+<!--     else if (v1 == "deposit" || v1=="withdraw"){-->
+<!--         part2.style.display = "block"-->
+<!--         part3.style.display = "none"-->
+<!--     }-->
+<!--}-->
+<!--</script>-->
